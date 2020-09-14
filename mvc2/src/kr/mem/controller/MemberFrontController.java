@@ -30,7 +30,7 @@ public class MemberFrontController extends HttpServlet {
 		  controller=mappings.getController(command);
 		  nextView=controller.requestHandle(request, response);
 	  
-		  //View ÆäÀÌÁö·Î ¿¬µ¿ÇÏ´Â ºÎºĞ
+		  //View í˜ì´ì§€ë¡œ ì´ë™
 		  if(nextView!=null) {
 			  if(nextView.indexOf("redirect:")!=-1) {
 				  String[] sp=nextView.split(":"); //  sp[0]:sp[1]
